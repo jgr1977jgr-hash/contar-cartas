@@ -1,0 +1,19 @@
+[app]
+title = ContarCartas
+package.name = contarcartas
+package.domain = org.example
+source.dir = .
+source.include_exts = py, kv, png, jpg, jpeg, txt
+version = 0.4
+requirements = python3, kivy, opencv-python-headless, numpy, pytesseract
+orientation = portrait
+fullscreen = 1
+android.permissions = CAMERA, WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE
+android.api = 33
+android.minapi = 21
+android.archs = armeabi-v7a, arm64-v8a
+android.entrypoint = org.kivy.android.PythonActivity
+android.presplash_color = #222222
+android.icon = icon.png
+log_level = 2
+window = auto
